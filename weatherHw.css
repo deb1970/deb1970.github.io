@@ -18,7 +18,7 @@ nav a{
     background-image: url("radar.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    height: 380px;
+    height: 395px;
     
     }
 u{
@@ -34,7 +34,7 @@ u{
 
 }    
 .yourCityFront{
-    background-image: url("dreamer.jpg");
+    background-image: url("background3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -93,6 +93,11 @@ h5{
 .container2{
   perspective: 800px;
 }
+h6{
+    text-align: justify;
+    font-weight: bold;
+    color:black;
+}
 .card2{
   transform-style: preserve-3d;
   transition: all 1.0s linear;
@@ -104,9 +109,9 @@ h5{
 
 .card2:hover .back {
  transform: rotateY(0deg);
+ 
 }
 .face {
-  backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: 2.5s;
   

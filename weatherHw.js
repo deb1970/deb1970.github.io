@@ -31,15 +31,18 @@ $(function () {
                 $("#yourLocation").html(div);
                 //for the back of the card--these will append to the back of the card to the yourLocationWeekly div listing weekly info//
                 var div = $("<div></div>");
-                div.append("</br >")
+                div.append("<h4>" + "<u>Next Five Days for</u>" + " " + city + " " + state + "</h4>")
+                    
+                    .append("<h6>" + "<u>DAY ONE: </u>" + "Min. Temp: " + Math.round(data.daily.data[1].temperatureMin) + "&deg;" + " " + data.daily.data[1].summary + " " + "Max. Temp: " + Math.round(data.daily.data[1].temperatureMax) + "&deg;" + "</h5>")
                     .append("</br >")
-                    .append("<h4>" + "<u>Next Five Days for</u>" + " " + city + " " + state + "</h4>")
-                    .append("<h5>" + "<u>DAY ONE: </u>" + "Min. Temp: " + Math.round(data.daily.data[1].temperatureMin) + "&deg;" + " " + data.daily.data[1].summary + " " + "Max. Temp: " + Math.round(data.daily.data[1].temperatureMax) + "&deg;" + "</h5>")
-                    .append("<h5>" + "<u>DAY TWO: </u>" + "Min. Temp: " + Math.round(data.daily.data[2].temperatureMin) + "&deg;" + " " + data.daily.data[2].summary + " " + "Max. Temp: " + Math.round(data.daily.data[2].temperatureMax) + "&deg;" + "</h5>")
-                    .append("<h5>" + "<u>DAY THREE: </u>" + "Min. Temp: " + Math.round(data.daily.data[3].temperatureMin) + "&deg;" + " " + data.daily.data[3].summary + " " + "Max. Temp: " + Math.round(data.daily.data[3].temperatureMax) + "&deg;" + "</h5>")
-                    .append("<h5>" + "<u>DAY FOUR: </u>" + "Min. Temp: " + Math.round(data.daily.data[4].temperatureMin) + "&deg;" + " " + data.daily.data[4].summary + " " + "Max. Temp: " + Math.round(data.daily.data[4].temperatureMax) + "&deg;" + "</h5>")
-                    .append("<h5>" + "<u>DAY FIVE: </u>" + "Min. Temp: " + Math.round(data.daily.data[5].temperatureMin) + "&deg;" + " " + data.daily.data[5].summary + " " + "Max. Temp: " + Math.round(data.daily.data[5].temperatureMax) + "&deg;" + "</h5>")
-
+                    .append("<h6>" + "<u>DAY TWO: </u>" + "Min. Temp: " + Math.round(data.daily.data[2].temperatureMin) + "&deg;" + " " + data.daily.data[2].summary + " " + "Max. Temp: " + Math.round(data.daily.data[2].temperatureMax) + "&deg;" + "</h5>")
+                    .append("</br >")
+                    .append("<h6>" + "<u>DAY THREE: </u>" + "Min. Temp: " + Math.round(data.daily.data[3].temperatureMin) + "&deg;" + " " + data.daily.data[3].summary + " " + "Max. Temp: " + Math.round(data.daily.data[3].temperatureMax) + "&deg;" + "</h5>")
+                    .append("</br >")
+                    .append("<h6>" + "<u>DAY FOUR: </u>" + "Min. Temp: " + Math.round(data.daily.data[4].temperatureMin) + "&deg;" + " " + data.daily.data[4].summary + " " + "Max. Temp: " + Math.round(data.daily.data[4].temperatureMax) + "&deg;" + "</h5>")
+                    .append("</br >")
+                    .append("<h6>" + "<u>DAY FIVE: </u>" + "Min. Temp: " + Math.round(data.daily.data[5].temperatureMin) + "&deg;" + " " + data.daily.data[5].summary + " " + "Max. Temp: " + Math.round(data.daily.data[5].temperatureMax) + "&deg;" + "</h5>")
+                    .append("</br >")
                 $("#yourLocationWeekly").html(div);
 
             });
